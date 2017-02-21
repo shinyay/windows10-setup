@@ -89,6 +89,21 @@ Color
 - vim
 - git
 
+### 1.4. Configuration
+
+#### 1.4.1. SSH
+
+```
+$ ssh-keygen -t rsa -b 4096 -C "shinya.com@gmail.com"
+```
+
+- ~/.ssh/id_rsa.pub をgithub へ登録
+- 登録後の確認:
+
+```
+$ ssh -T git@github.com
+```
+
 ## 2. ConEmu
 
 ## 3. Atom Beta
