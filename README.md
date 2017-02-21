@@ -88,6 +88,9 @@ Color
 
 - vim
 - git
+- zip
+- unzip
+- tar
 
 ### 1.4. Configuration
 
@@ -106,4 +109,85 @@ $ ssh -T git@github.com
 
 ## 2. ConEmu
 
+### Msys2 の登録
+
+#### Startup
+
+- **Settings** -> **Startup** -> **Tasks**
+  - `Msys2::bash`
+  - `set CHERE_INVOKING=1 & MSYSTEM=MSYS & C:\tools\msys64\usr\bin\bash.exe --login -i -new_console:C:\tools\msys64\msys2.ico`
+
+#### ConEmu Here
+
+- **Settings** -> **Integration** -> **Command**
+  - `set CHERE_INVOKING=1 & set MSYSTEM=MINGW64 & C:\msys\usr\bin\bash.exe --login -i -new_console:C:\msys\msys2.ico -new_console:d:C:\msys\home\syanagih`
+
+### 基本設定
+
+#### Main
+
+- **Settings** -> **Main**
+
+##### Font
+
+- Font: Source Code Pro
+- Anti aliasing: Clear Type
+
+##### Monospace
+
+- Monospace: OFF
+
+#### Main::Size & Pos
+
+##### Aligmment
+
+- Center console in workspace: ON
+- Pad size (pixels): 10
+
+#### Main::Appearance
+
+##### Title bar
+
+- Hide caption always: ON
+
+#### Features::Colors
+
+##### Schemes
+
+- Schemes: <Solarized (John Doe)>
+
+#### Keys & Macro::Mark/Copy
+
+##### Select text with keybord
+
+- Start selection with Shift + Arrow: ON
+
+#### Keys & Macro::Paste
+
+##### Paste mode
+
+- Shift+Instert: Do nothing
+- Ctrl+v: Multi lines
+
+##### Mouse button actions
+
+- Right: <None>
+
 ## 3. Atom Beta
+
+### Atom Packages Synchronization with apm stars
+
+```
+$ apm login
+$ apm stars --installed
+$ apm start --install
+```
+
+#### git-plus
+
+- git のパスを設定
+  - `C:\msys\usr\bin\git.exe`
+
+### 個別インストール
+
+- atom-beautify
