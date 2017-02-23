@@ -3,6 +3,8 @@
 1. Msys2
 2. ConEmu
 3. Atom Beta
+4. SDKMAN!
+5. Hain
 
 ---
 
@@ -130,7 +132,9 @@ $ ssh -T git@github.com
 
 ##### Font
 
-- Font: Source Code Pro
+- Font: Myrica P
+  - [プログラミングフォント Myrica](https://myrica.estable.jp/)
+- Size: 16
 - Anti aliasing: Clear Type
 
 ##### Monospace
@@ -191,3 +195,27 @@ $ apm start --install
 ### 個別インストール
 
 - atom-beautify
+
+## 4. SDKMAN!
+
+```
+$ curl -s "https://get.sdkman.io" | bash
+$ source "/home/syanagih/.sdkman/bin/sdkman-init.sh"
+```
+
+### 4.1. Maven
+
+```
+$ sdk install Maven
+```
+
+### 4.2. Activator
+
+```
+sdk install activator
+```
+
+## 5. Hain
+
+- [Hain](https://github.com/appetizermonster/hain)
+  - Alternative: [Cerebro](https://github.com/KELiON/cerebro)
