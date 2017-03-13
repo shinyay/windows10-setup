@@ -5,6 +5,10 @@
 3. Atom Beta
 4. SDKMAN!
 5. Hain
+6. Screenpresso
+7. GifCam
+8. VirtualBox
+9. Notepad++
 
 ---
 
@@ -93,6 +97,23 @@ Color
 - zip
 - unzip
 - tar
+- python3
+
+#### 1.3.1. python3
+
+##### pip
+
+- インストール確認
+
+```
+$ python -m pip -V
+```
+
+- インストール
+
+```
+$ curl -kL https://bootstrap.pypa.io/get-pip.py | python
+```
 
 ### 1.4. Configuration
 
@@ -219,3 +240,15 @@ sdk install activator
 
 - [Hain](https://github.com/appetizermonster/hain)
   - Alternative: [Cerebro](https://github.com/KELiON/cerebro)
+
+## 6. Screenpresso
+- [Screenpresso](https://www.screenpresso.com/)
+
+## 7. GifCam
+- [GifCam](http://blog.bahraniapps.com/gifcam/)
+
+## 8. VirtualBox
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+## 9. Notepad++
+- [Notepad++](https://notepad-plus-plus.org/)
