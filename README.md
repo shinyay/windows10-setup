@@ -153,7 +153,7 @@ $ ssh -T git@github.com
 
 ##### Font
 
-- Font: Myrica P
+- Font: MyricaM M
   - [プログラミングフォント Myrica](https://myrica.estable.jp/)
 - Size: 16
 - Anti aliasing: Clear Type
@@ -180,6 +180,26 @@ $ ssh -T git@github.com
 ##### Schemes
 
 - Schemes: <Solarized (John Doe)>
+
+#### Integration
+
+##### Command
+
+```
+set MSYSTEM=MINGW64 & C:\msys\usr\bin\bash.exe -c "export CONEMU_CURRENT=$PWD && /c/msys/usr/bin/bash.exe --login"
+```
+
+##### /etc/profile
+
+以下を末尾に追加
+
+```
+if [ -n ${CONEMU_CURRENT} ]; then
+    cd ${CONEMU_CURRENT}
+else
+    cd ~
+fi
+```
 
 #### Keys & Macro::Mark/Copy
 
