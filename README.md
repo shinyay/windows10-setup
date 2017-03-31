@@ -98,6 +98,7 @@ Color
 - unzip
 - tar
 - python3
+- diffutils
 
 #### 1.3.1. python3
 
