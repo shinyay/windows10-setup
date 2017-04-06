@@ -234,7 +234,7 @@ fi
 ```
 $ apm login
 $ apm stars --installed
-$ apm start --install
+$ apm stars --install
 ```
 
 #### git-plus
