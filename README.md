@@ -147,12 +147,12 @@ $ ssh -T git@github.com
 
 - **Settings** -> **Startup** -> **Tasks**
   - `Msys2::bash`
-  - `set CHERE_INVOKING=1 & MSYSTEM=MSYS & C:\tools\msys64\usr\bin\bash.exe --login -i -new_console:C:\tools\msys64\msys2.ico`
+  - `set CHERE_INVOKING=1 & set MSYSTEM=MINGW64 & C:\msys2\usr\bin\bash.exe --login -i -new_console:C:\msys2\msys2.ico -new_console:d:C:\msys2\home\syanagih`
 
 #### ConEmu Here
 
 - **Settings** -> **Integration** -> **Command**
-  - `set CHERE_INVOKING=1 & set MSYSTEM=MINGW64 & C:\msys\usr\bin\bash.exe --login -i -new_console:C:\msys\msys2.ico -new_console:d:C:\msys\home\syanagih`
+  - `set CHERE_INVOKING=1 & set MSYSTEM=MINGW64 & C:\msys2\usr\bin\bash.exe --login -i -new_console:C:\msys2\msys2.ico -new_console:d:C:\msys2\home\syanagih`
 
 ### 基本設定
 
@@ -195,7 +195,7 @@ $ ssh -T git@github.com
 ##### Command
 
 ```
-set MSYSTEM=MINGW64 & C:\msys\usr\bin\bash.exe -c "export CONEMU_CURRENT=$PWD && /c/msys/usr/bin/bash.exe --login"
+set MSYSTEM=MINGW64 & C:\msys2\usr\bin\bash.exe -c "export CONEMU_CURRENT=$PWD && /c/msys2/usr/bin/bash.exe --login"
 ```
 
 ##### /etc/profile
