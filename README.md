@@ -92,13 +92,17 @@ Color
 
 ### 1.3. pacman パッケージ・インストール
 
-- vim
 - git
+- vim
 - zip
 - unzip
 - tar
 - python3
 - diffutils
+
+```
+$ pacman -S git vim zip unzip tar python3 diffutils
+```
 
 #### 1.3.1. python3
 
