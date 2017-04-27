@@ -120,6 +120,16 @@ $ python -m pip -V
 $ curl -kL https://bootstrap.pypa.io/get-pip.py | python
 ```
 
+##### PSM CLI
+
+```
+$ curl -X GET -u ${USERNAME}:${PASSWORD} -H X-ID-TENANT-NAME:${IDDOMAIN} https://psm.us.oraclecloud.com/paas/core/api/v1.1/cli/${IDDOMAIN}/client -o p smcli.zip
+```
+
+```
+$ pip install -U psmcli.zip
+```
+
 #### 1.3.2. Git
 
 ##### Alias: git log
@@ -202,6 +212,10 @@ $ ssh -T git@github.com
 set MSYSTEM=MINGW64 & C:\msys2\usr\bin\bash.exe -c "export CONEMU_CURRENT=$PWD && /c/msys2/usr/bin/bash.exe --login"
 ```
 
+##### Icon file
+
+`C:\msys2\msys2.ico`
+
 ##### /etc/profile
 
 以下を末尾に追加
@@ -279,6 +293,7 @@ sdk install activator
 
 ## 7. GifCam
 - [GifCam](http://blog.bahraniapps.com/gifcam/)
+  - VClip
 
 ## 8. VirtualBox
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
