@@ -99,9 +99,10 @@ Color
 - tar
 - python3
 - diffutils
+- openssh
 
 ```
-$ pacman -S git vim zip unzip tar python3 diffutils
+$ pacman -S git vim zip unzip tar python3 diffutils openssh
 ```
 
 #### 1.3.1. python3
