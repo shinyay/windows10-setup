@@ -9,6 +9,8 @@
 7. GifCam
 8. VirtualBox
 9. Notepad++
+10. Pandoc
+11. Node.js
 
 ---
 
@@ -301,3 +303,41 @@ sdk install activator
 
 ## 9. Notepad++
 - [Notepad++](https://notepad-plus-plus.org/)
+
+## 10. Pandoc
+- [Pandoc](https://github.com/jgm/pandoc/releases)
+
+1. 一度インストールした後に `pandoc.exe` を /usr/bin/に移動
+2. その後アンインストールする
+
+## 11. Node.js 環境
+### 11.1. nodist
+バージョン管理ツール
+- [v0.8.8 as if Apr-29-2017](https://github.com/marcelklehr/nodist/releases/)
+- インストールディレクトリ: `C:\\Apps\\Nodist`
+
+#### 環境変数設定
+- .bash_cutom
+
+```bash
+export PATH=/c/Apps/Nodist/bin:$PATH
+export NODIST_PREFIX=/c/Apps/Nodist
+export NODE_PATH=/c/Apps/Nodist/node_modules
+export NODIST_X64=1
+```
+#### nodist コマンド
+- `nodist update`: nodist 依存ファイルのアップデート
+- `nodist dist`: インストール可能バージョン
+- `nodist ls`: インストール済みリスト
+- `nodist add vX.X.X`: 特定バージョンのインストール
+- `nodist rm vX.X.X`: 特定バージョンのアンインストール
+- `nodist vX.X.X`: 特定バージョンへの切り替え
+
+### 11.2. npm
+Node.js パッケージ管理
+
+#### npm 更新
+```
+$ cd $NODIST_PREFIX
+$ npm update -g npm
+```
