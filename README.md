@@ -11,6 +11,8 @@
 9. Notepad++
 10. Pandoc
 11. Node.js
+12. Ruby
+13. Docker for Windows
 
 ---
 
@@ -341,3 +343,80 @@ Node.js パッケージ管理
 $ cd $NODIST_PREFIX
 $ npm update -g npm
 ```
+
+## 12. Ruby
+### 手順
+#### 12.1. MSYS - MINGW64 開発環境
+
+##### MSYS 更新
+```
+$ pacman -Syuu
+```
+##### MINGW64 GCC
+
+**base-devel** インストール
+```
+$ pacman -S base-devel
+選択して下さい (デフォルト=all): all
+```
+
+```
+$ pacman -S mingw-w64-x86_64-toolchain
+選択して下さい (デフォルト=all): all
+```
+
+#### 12.2. RubyInstaller2
+RubyInstaller2 ダウンロード
+- https://github.com/oneclick/rubyinstaller2/releases
+  - RubyInstaller-2.4.1-1 - 2017-05-25
+```
+$ wget https://github.com/oneclick/rubyinstaller2/releases/download/2.4.1-1/rubyinstaller-2.4.1-1-x64.exe
+```
+- Install: /c/Ruby/Ruby24-x64
+- Defaul External Encodinf: UTF-8
+
+```
+$ ruby -v
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x64-mingw32]
+```
+#### 12.3. Rails
+```
+$ gem install rails
+```
+
+```
+$ rails -v
+Rails 5.1.1
+```
+
+## 13. Docker for Windows
+- 前提: Windows 10 Pro
+
+### Windows 10 Pro - Hyper-V 有効化設定
+
+1. コントロールパネル
+2. プログラムと機能
+3. Windowsの機能の有効火または無効化
+4. **Hyper-V** にチェック
+5. 再起動
+
+### Docker for Windows(Stabke)
+- https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows
+  - [Stable channel](https://download.docker.com/win/stable/InstallDocker.msi)
+- インストール
+
+### 確認
+1. スタートボタン
+2. Windows管理ツール
+3. Hyper-Vマネージャを起動
+4. Hyper-vマネージャ -> マシン名
+5. **MobyLinuxVM** の追加が確認できる
+
+### 環境変数
+**/c/Program Files/Docker/Docker/Resources/bin** を PATHに追加
+
+### Kitematic
+1. タスクトレイのDockerを右クリック
+2. Open Kitematic
+3. Download Kitematic
+4. **/c/Program Files/Docker/Kitematic** に展開
