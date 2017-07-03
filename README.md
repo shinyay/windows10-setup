@@ -13,6 +13,8 @@
 11. Node.js
 12. Ruby
 13. Docker for Windows
+14. WinQuickLook
+15. DisplayLink USB Graphics Software for Windows
 
 ---
 
@@ -420,3 +422,10 @@ Rails 5.1.1
 2. Open Kitematic
 3. Download Kitematic
 4. **/c/Program Files/Docker/Kitematic** に展開
+
+## 14. WinQuickLook
+- [WinQuickLook](https://www.microsoft.com/ja-jp/store/p/winquicklook/9njmtkk6jc0q)
+
+## 15. DisplayLink USB Graphics Software for Windows
+- Lenovo ThinkVision LT1421
+  - [Windows Driver Downloads](http://www.displaylink.com/downloads/windows)
