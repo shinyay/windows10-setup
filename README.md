@@ -17,6 +17,7 @@
 15. DisplayLink USB Graphics Software for Windows
 16. VirtualBox / Vagrant
 17. Packer
+18. pyenv / virtualenv
 
 ---
 
@@ -436,6 +437,7 @@ Rails 5.1.1
 ### VirtualBox
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   - [VirtualBox 5.1.22 platform packages](http://download.virtualbox.org/virtualbox/5.1.22/VirtualBox-5.1.22-115126-Win.exe)
+  - [VirtualBox 5.0.40](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
   - **C:\Apps\Oracle\VirtualBox**
   - デフォルトの仮想マシンフォルダ：**C:\AppData\VirtualBoxVMs**
 
@@ -449,3 +451,13 @@ Rails 5.1.1
 - [Packer](https://www.packer.io/)
   - [Packer 1.0.2](https://releases.hashicorp.com/packer/1.0.2/packer_1.0.2_windows_amd64.zip?_ga=2.122341513.382996618.1499828888-631711674.1499828888)
 - `/usr/bin` に配置
+
+## 18. pyenv / virtualenv
+**msys2_shell.cmd** を管理者権限実行
+```
+$ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+$ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+$ cd ~/.pyenv/bin
+$ rm pyenb
+$ ln -s ../libexec/pyenv pyenv
+```
