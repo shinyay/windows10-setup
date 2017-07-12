@@ -15,6 +15,8 @@
 13. Docker for Windows
 14. WinQuickLook
 15. DisplayLink USB Graphics Software for Windows
+16. VirtualBox / Vagrant
+17. Packer
 
 ---
 
@@ -429,3 +431,21 @@ Rails 5.1.1
 ## 15. DisplayLink USB Graphics Software for Windows
 - Lenovo ThinkVision LT1421
   - [Windows Driver Downloads](http://www.displaylink.com/downloads/windows)
+
+## 16. VirtualBox / Vagrant
+### VirtualBox
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+  - [VirtualBox 5.1.22 platform packages](http://download.virtualbox.org/virtualbox/5.1.22/VirtualBox-5.1.22-115126-Win.exe)
+  - **C:\Apps\Oracle\VirtualBox**
+  - デフォルトの仮想マシンフォルダ：**C:\AppData\VirtualBoxVMs**
+
+### Vagrant
+- [Vagrant](https://www.vagrantup.com/downloads.html)
+  - [Vagrant 1.9.7](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7_x86_64.msi?_ga=2.8413365.1403997470.1499822846-1954389387.1499822846)
+  - **C:\Apps\Vagrant\**
+  - VAGRANT_HOMEを環境変数に設定
+
+## 17. Packer
+- [Packer](https://www.packer.io/)
+  - [Packer 1.0.2](https://releases.hashicorp.com/packer/1.0.2/packer_1.0.2_windows_amd64.zip?_ga=2.122341513.382996618.1499828888-631711674.1499828888)
+- `/usr/bin` に配置
