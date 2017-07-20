@@ -18,6 +18,7 @@
 16. VirtualBox / Vagrant
 17. Packer
 18. pyenv / virtualenv
+19. ScreenToGif
 
 ---
 
@@ -461,3 +462,8 @@ $ cd ~/.pyenv/bin
 $ rm pyenb
 $ ln -s ../libexec/pyenv pyenv
 ```
+
+## 19. ScreenToGif
+GifCam Alternative
+
+- http://www.screentogif.com/
